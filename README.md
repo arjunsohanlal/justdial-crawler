@@ -1,6 +1,4 @@
 # justdial-crawler
-Submission for NetArt - Python Development Internship
-
 ### Basic instructions:
 1. Install Scrapy, more info [here.](https://docs.scrapy.org/en/latest/intro/install.html)
 2. Navigate into the `netart/` directory
