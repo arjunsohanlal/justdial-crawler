@@ -1,8 +1,8 @@
 # justdial-crawler
 ### Basic instructions:
 1. Install Scrapy, more info [here.](https://docs.scrapy.org/en/latest/intro/install.html)
-2. Navigate into the `netart/` directory
-2. You should see the following directories and files listed -
+2. Navigate into the `netart/` directory.
+2. You should see the following directories and files listed:
     - `netart/`
     - `output.json` - sample output file
     - `scrapy.cfg`
