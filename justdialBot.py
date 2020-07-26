@@ -10,7 +10,6 @@ class jsSpider(scrapy.Spider):
             'accept-encoding': 'gzip, deflate, br',
             'accept-language': 'en-US,en;q=0.9',
             'cache-control': 'max-age=0',
-            'cookie': 'ppc=; TKY=8414a442ee750876e3fc08c5b8f60f25c84b5da6239f77b3b0c8970ead23530c; _ctok=c60d64f66892cf5baf99a56a8ebc929e7bb4192ccc84b37ab8cbe6b0eb4f0b6d; main_city=Delhi; akcty=Delhi; inweb_city=Delhi; attn_user=logout; PHPSESSID=fba34180ed9b2ceaa2c352528d505570; profbd=0; bdcheck=1; ak_bmsc=3D3018614F18A1C85D5020DB7D07757F7D38DE9C674B0000BD4F1D5F3D7E9F75~plgiULj+AntRuvycXOiMTO74YGM3ro+wzn/+fPezrcO3V/oeSalUwHlMCt0mzB/kZVSoNUsHwUaASJmk/kaVMlu7UgI8pDY9iCKJU7lLl39eT4STtTLsl5wqPRcG60oAtLt7C2CynJPcJD/L/Ypa4NxuX2ddyPAfx8w54LwHZk+eaLWbBvcCS05LabcgC1AFAk0Z/pQjp9/bOkikUxCj/QbE0ixnEtQRLa61od/9i3QDM=; tab=toprs; prevcatid=10192844; bd_inputs=2|4|Estate%20Agents%20For%20Residential%20Rental; view=lst_v; scity=Delhi; sarea=; dealBackCity=Delhi; BDprofile=1; bm_mi=EEA783DBF4C6CACA9E1B4070CEC8A441~Bikg1G6eA9IlRDxSpTd/KZn7eagwgji0q4w6M/hqVRxG7v4tiel6shl0zNVBpsp8/N/z+IpIHrgUMgnrXO9gGmlKpLaR5HnfNWY0fjKyBn//l9Ia+or2VvHhtye1vaQv4H1oa9/rSHNElqY/6/6Lao2Mtif6DAIMBjvd4n1vD6BBO7cRkBj0kPE5DASzTqWOm3CQ3mC1K18madU+cVXSW7KdGtmD/XyzIAZdbeWyErA9T9F4WZW+3uoncfj17I95IaVpBT/Wxy5frmDVV9eZJA==; bm_sv=8127AFCF4CA83E61A985C6EBE2D671FE~9Bpd/4lRHLrpicigwbICGCgVxbFVc9gFqbxxCD8ftNOBN5AvnrvSz+qESYgKBfw9pWBp0cjtf7Zbq01EOtnoERNz9Zfpl9SOg0oU3EIzXxWYj2URXKszas7wrd6mnEwksja+888cPxAX6ursug0FkBFia/i6fz0uAFRdpOT3eVg=',
             'sec-fetch-dest': 'document',
             'sec-fetch-mode': 'navigate',
             'sec-fetch-site': 'none',
@@ -24,15 +23,16 @@ class jsSpider(scrapy.Spider):
             "accept":"application/json, text/javascript, */*; q=0.01",
             "accept-encoding":"gzip, deflate, br",
             "accept-language":"en-US,en;q=0.9",
-            "cookie":"ppc=; TKY=8414a442ee750876e3fc08c5b8f60f25c84b5da6239f77b3b0c8970ead23530c; _ctok=c60d64f66892cf5baf99a56a8ebc929e7bb4192ccc84b37ab8cbe6b0eb4f0b6d; main_city=Delhi; akcty=Delhi; inweb_city=Delhi; attn_user=logout; PHPSESSID=fba34180ed9b2ceaa2c352528d505570; profbd=0; bdcheck=1; ak_bmsc=3D3018614F18A1C85D5020DB7D07757F7D38DE9C674B0000BD4F1D5F3D7E9F75~plgiULj+AntRuvycXOiMTO74YGM3ro+wzn/+fPezrcO3V/oeSalUwHlMCt0mzB/kZVSoNUsHwUaASJmk/kaVMlu7UgI8pDY9iCKJU7lLl39eT4STtTLsl5wqPRcG60oAtLt7C2CynJPcJD/L/Ypa4NxuX2ddyPAfx8w54LwHZk+eaLWbBvcCS05LabcgC1AFAk0Z/pQjp9/bOkikUxCj/QbE0ixnEtQRLa61od/9i3QDM=; tab=toprs; prevcatid=10192844; bd_inputs=2|4|Estate%20Agents%20For%20Residential%20Rental; view=lst_v; scity=Delhi; sarea=; dealBackCity=Delhi; BDprofile=1; bm_mi=EEA783DBF4C6CACA9E1B4070CEC8A441~Bikg1G6eA9IlRDxSpTd/KZn7eagwgji0q4w6M/hqVRxG7v4tiel6shl0zNVBpsp8/N/z+IpIHrgUMgnrXO9gGmlKpLaR5HnfNWY0fjKyBn/cBnW5HPssYKr3Z82FlMHxaZqUykELdGVSu6qX/NKSM5UTA4C7p/k2127DbrMG419dA9Ka19ULeyr4phq8kMUNF/3bhZnKBnz4sSc1xc1TR0jRcnx9xDkKdqTuPTWZf4TaSCRkl9y4a/czztP54qHPhZ5pfmnaHn2aXbPrDRRPlQ==; bm_sv=8127AFCF4CA83E61A985C6EBE2D671FE~9Bpd/4lRHLrpicigwbICGCgVxbFVc9gFqbxxCD8ftNOBN5AvnrvSz+qESYgKBfw9pWBp0cjtf7Zbq01EOtnoERNz9Zfpl9SOg0oU3EIzXxWVAPq3lutpHJHhtdcJcwIAaz5ez8zYve5th3Pb6RiSKul578cuBNSCixgqZuXOeAE=",
+            "cookie": "",
             "referer":"https://www.justdial.com/Delhi/House-On-Rent/nct-10192844",
             "sec-fetch-dest":"empty",
             "sec-fetch-mode":"cors",
             "sec-fetch-site":"same-origin",
             "user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36",
-            "x-frsc-token":"8414a442ee750876e3fc08c5b8f60f25c84b5da6239f77b3b0c8970ead23530c",
             "x-requested-with":"XMLHttpRequest"
         }
+    # Reference set of cookies in case any are unavailable
+    old_cookie = "ppc=; TKY=c0bf3418a73b1fd4bd6ef5166684f897c17919161f1235018d81851fdad41f06; _ctok=5c72268a8bd489e3e5d3424fb3434fd87eace35dbb5cdab06e1e265f67d9fa0e; main_city=Delhi; akcty=Delhi; inweb_city=Delhi; attn_user=logout; profbd=0; bdcheck=1; tab=toprs; bd_inputs=2|4|Estate%20Agents%20For%20Residential%20Rental; view=lst_v; scity=Delhi; sarea=; dealBackCity=Delhi; docidarray=%7B%22011PXX11.XX11.150930185126.K1Q8%22%3A%222020-07-24%22%7D; prevcatid=10192844; BDprofile=1; ak_bmsc=604928AB3FE085DB253C8F59815E771017CB3F1CE150000061121C5F70E63B67~plnDsavxg/M7Sg2/VYU3REmc6SVqbe1u1lcc8o8tW96VCP4OCHW6XSotj+UKLgi4qVUNBwtA+30PK9gVt6LZnB7J6RVQRWelvH85otQ0eTMUVZDnn3Hz4QWojBA4QLWu08mbG0f0vaEb/xeGHQOJq0B9UiopxMiSOKx4PS5f6BI8fObEV5g2qmp7FRWzjZml8lxHlLK0xdzqqXXEDMqOo3G0FbipguKsuhWjTDCSH+xFA=; PHPSESSID=8v0h9cjkp62q0j0dcogcpb5q22; bm_mi=0B35FCCD50D8E56AB54B93FF2ED14813~/K5ZmkanMyeqABEyHRnSV6VR3c/GEP9S83fy2GvuLZP0/0zUjMF3u4qe8stnoS7GHvoN5oCSuT8yjwGFJPfb/3aru8b7htfGP74Cf94VmWNzXwdimkcD3PmlZFxH0rTlHGlzrPcH0w9yk8YbDJdSlxMBDTZ9ez+TJrTGKRbCn/BG2TBbce28mf+kFFyhsj/gQVz639A6bSwfGgQCHa4IOAGbfHZf38pJEvIFqUZ36R0uF3DwJs5BGQgM/0Q4ofs8Dc5Ce2gc9nY0+469g8aGxw==; bm_sv=E96C287E40EC63914A75D2D77DC10253~hX56gQLuLI4vftBWp2H/FjD6NlmmWGBBvbpP0ILK9Da4boDG+GeLvUXpDEGEzykxaQUTyEkz1y6fE4RjdDIk00jd/afUNxynJCQwV3RJBeCAUUVpOOpG0z4qtkXV+gKWrLpDJBWofLhX9kvbn0OX79I/7vhX1vgRH84sFpdtKaQ="
 
     # Simple lookup dictionary for reading numbers off of CSS classes
     charDict = {
@@ -51,22 +51,42 @@ class jsSpider(scrapy.Spider):
             'dc': '+',
             'ba': '-'
         }
-
+    
 
     # This is a built-in Scrapy function that runs first where we'll override the default headers
     # Documentation: https://doc.scrapy.org/en/latest/topics/spiders.html#scrapy.spiders.Spider.start_requests
     def start_requests(self):
         # First request on main page data
-        url_main = 'https://www.justdial.com/Delhi/House-On-Rent/nct-10192844'
-        yield scrapy.http.Request(url_main, headers=self.headers_main, callback=self.parse_main)
-
-        # Request URL for paginated HTML (lazy loaded section of the page)
-        url_paginated = "https://www.justdial.com/functions/ajxsearch.php?national_search=0&act=pagination_new&city=Delhi&search=House%20On%20Rent&where=&catid=0&psearch=&prid=&page=2&SID=&mntypgrp=0&toknbkt=&bookDate=&jdsrc=&median_latitude=28.664407557287&median_longitude=77.090145924828&ncatid=10192844&mncatname=Estate%20Agents%20For%20Residential%20Rental&dcity=Delhi&pncode=999999&htlis=0"
-        yield scrapy.http.Request(url_paginated, headers=self.headers_paginated, callback=self.parse_paginated)
-
+        url = 'https://www.justdial.com/Delhi/House-On-Rent/nct-10192844'
+        yield scrapy.http.Request(url, headers=self.headers_main, callback=self.parse_main)
 
     # Standard parse function for response from main page
     def parse_main(self, response):
+        # Pulling old backup cookies into dictionary
+        old_cookie_list = self.old_cookie.split('; ')
+        old_cookie_dict = { x.split('=',1)[0] : x.split('=',1)[1] for x in old_cookie_list }
+        
+        # Pulling current cookies into dictionary 
+        main_cookie_list = response.headers.getlist('Set-Cookie')
+        main_cookie_list = [str(x)[2:].split(';')[0] for x in main_cookie_list]
+        main_cookie_dict = { x.split('=',1)[0] : x.split('=',1)[1] for x in main_cookie_list }
+        
+        # Setting up new cookies for upcoming paginated HTML requests
+        new_cookie_dict = {}
+        new_cookie_str = ""
+
+        for x in sorted(old_cookie_dict):
+            new_cookie_dict[x] = main_cookie_dict.get(x,old_cookie_dict[x])
+            new_cookie_str = new_cookie_str + x + '=' + new_cookie_dict[x] + "; "
+        new_cookie_str = new_cookie_str[:-2]
+
+        # Storing new cookies
+        self.headers_paginated['cookie'] = new_cookie_str
+
+        # Extracting and storing CSRF auth token for new requests
+        frsc = response.xpath('//meta[18]/@content').get()
+        self.headers_paginated['x-frsc-token'] = str(frsc)
+        
         # Iterating through list of companies
         for company in response.css("li.cntanr"):
             # Yielding each company's details in a dictionary format
@@ -76,6 +96,12 @@ class jsSpider(scrapy.Spider):
                 'phone': self.get_phone(company),
                 'address': company.css("span.adWidth::text").get().strip('\t|\n'),
             }
+
+        # Request URL for paginated HTML (lazy loaded section of the page)    
+        url_paginated = "https://www.justdial.com/functions/ajxsearch.php?national_search=0&act=pagination_new&city=Delhi&search=House%20On%20Rent&where=&catid=0&psearch=&prid=&page=2&SID=&mntypgrp=0&toknbkt=&bookDate=&jdsrc=&median_latitude=28.664407557287&median_longitude=77.090145924828&ncatid=10192844&mncatname=Estate%20Agents%20For%20Residential%20Rental&dcity=Delhi&pncode=999999&htlis=0"
+        yield scrapy.http.Request(url_paginated, headers=self.headers_paginated, callback=self.parse_paginated)
+
+
 
     def parse_paginated(self, response):
         # Parsing JSON response into dictionary
