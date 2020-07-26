@@ -8,4 +8,4 @@ Submission for NetArt - Python Development Internship
     - `netart/`
     - `output.json` - sample output file
     - `scrapy.cfg`
-3. Execute `scrapy crawl justdialcrawl -o export.json` on a terminal to generate ***export.json*** in the `netart/` directory.
+3. Execute `scrapy crawl justdialcrawl -o export.json` on a terminal to generate ***export.json*** in the current directory.
