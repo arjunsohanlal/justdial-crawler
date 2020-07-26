@@ -2,14 +2,13 @@ import scrapy
 import json
 
 class jsSpider(scrapy.Spider):
-    name = "justdial3"
+    name = "justdial4"
 
     headers_paginated = {
             "accept":"application/json, text/javascript, */*; q=0.01",
             "accept-encoding":"gzip, deflate, br",
             "accept-language":"en-US,en;q=0.9",
-            "cookie": "",
-            # "cookie":"ppc=; TKY=c0bf3418a73b1fd4bd6ef5166684f897c17919161f1235018d81851fdad41f06; _ctok=5c72268a8bd489e3e5d3424fb3434fd87eace35dbb5cdab06e1e265f67d9fa0e; main_city=Delhi; akcty=Delhi; inweb_city=Delhi; attn_user=logout; profbd=0; bdcheck=1; tab=toprs; bd_inputs=2|4|Estate%20Agents%20For%20Residential%20Rental; view=lst_v; scity=Delhi; sarea=; dealBackCity=Delhi; docidarray=%7B%22011PXX11.XX11.150930185126.K1Q8%22%3A%222020-07-24%22%7D; prevcatid=10192844; BDprofile=1; ak_bmsc=604928AB3FE085DB253C8F59815E771017CB3F1CE150000061121C5F70E63B67~plnDsavxg/M7Sg2/VYU3REmc6SVqbe1u1lcc8o8tW96VCP4OCHW6XSotj+UKLgi4qVUNBwtA+30PK9gVt6LZnB7J6RVQRWelvH85otQ0eTMUVZDnn3Hz4QWojBA4QLWu08mbG0f0vaEb/xeGHQOJq0B9UiopxMiSOKx4PS5f6BI8fObEV5g2qmp7FRWzjZml8lxHlLK0xdzqqXXEDMqOo3G0FbipguKsuhWjTDCSH+xFA=; PHPSESSID=8v0h9cjkp62q0j0dcogcpb5q22; bm_mi=0B35FCCD50D8E56AB54B93FF2ED14813~/K5ZmkanMyeqABEyHRnSV6VR3c/GEP9S83fy2GvuLZP0/0zUjMF3u4qe8stnoS7GHvoN5oCSuT8yjwGFJPfb/3aru8b7htfGP74Cf94VmWNzXwdimkcD3PmlZFxH0rTlHGlzrPcH0w9yk8YbDJdSlxMBDTZ9ez+TJrTGKRbCn/BG2TBbce28mf+kFFyhsj/gQVz639A6bSwfGgQCHa4IOAGbfHZf38pJEvIFqUZ36R0uF3DwJs5BGQgM/0Q4ofs8Dc5Ce2gc9nY0+469g8aGxw==; bm_sv=E96C287E40EC63914A75D2D77DC10253~hX56gQLuLI4vftBWp2H/FjD6NlmmWGBBvbpP0ILK9Da4boDG+GeLvUXpDEGEzykxaQUTyEkz1y6fE4RjdDIk00jd/afUNxynJCQwV3RJBeCAUUVpOOpG0z4qtkXV+gKWrLpDJBWofLhX9kvbn0OX79I/7vhX1vgRH84sFpdtKaQ=",
+            "cookie":"ppc=; TKY=c0bf3418a73b1fd4bd6ef5166684f897c17919161f1235018d81851fdad41f06; _ctok=5c72268a8bd489e3e5d3424fb3434fd87eace35dbb5cdab06e1e265f67d9fa0e; main_city=Delhi; akcty=Delhi; inweb_city=Delhi; attn_user=logout; profbd=0; bdcheck=1; tab=toprs; bd_inputs=2|4|Estate%20Agents%20For%20Residential%20Rental; view=lst_v; scity=Delhi; sarea=; dealBackCity=Delhi; docidarray=%7B%22011PXX11.XX11.150930185126.K1Q8%22%3A%222020-07-24%22%7D; prevcatid=10192844; BDprofile=1; PHPSESSID=42829c31e453f2a14063ca9de1ee9f66; ak_bmsc=F2505E4BC81B9C5DEA2A1C44775F93DD173945A0BB7C00006F451C5FDF616E73~plWSVS24KDVTJRYsLkfuW24jtEtUsTUVe8gd2y76bksvJcwZResN13n6Hk4mF1aR14Bk/m9waBXf26SEkY7GT87QvY8ngYkuHetQy9+S5HVNhxW3XkNmhd6TsppwtsKp7YbdQ/AhVLyS1etttmZxKwcp4W9gDRWFHNZpZzqb4H+VU0l1KLZabYTSphw1hob/z3v4Ul3zxsiYv1RM9AVvEpYw2v+ievMrIclgndACxS2E4=; bm_mi=E03C31427DF290A373FC34515961DF68~vaRaKxxO09W/7d27AFTFO3IAwVx3bHrcgFlRV4jt6mF4etoWE6/77idPt8lH4MHEw/lDLdQxXnsTpbE3bBJPELeG2gxp+Rd9ECcsIDt+TmS6DrR1ffgzOWkB2edpvqENQ6IqcQaNMN3D3DOEZ/10Al1uanYwGkfJ2jWz1WFQVcwh5dh9xxntPz8tTiLevQylyawdyYPGj96uh8LP5JnL7fOM8t+73L3I9sY+8wG+DYMYFpjQBODVNuGwEk8xLRCj; bm_sv=063F8B5A31AC59E6EC453CCA774449E1~XLHphGaFVN/uqZ6VzM6ty28hsi07eygR1QoaH4TC62b0fi6AI+0LfT0VEfc8eJtZPwvL3kNBPy+QbVHqIXcYk/ckdy4h+LodMd3T4tHqcCmgxGyhQDDHZTOvSauJjd8kTdQuTW0aRP60IE20kA+xHS1DhkNZOU9slBT42BPTiUQ=",
             "referer":"https://www.justdial.com/Delhi/House-On-Rent/nct-10192844",
             "sec-fetch-dest":"empty",
             "sec-fetch-mode":"cors",
@@ -44,7 +43,7 @@ class jsSpider(scrapy.Spider):
             'accept-encoding': 'gzip, deflate, br',
             'accept-language': 'en-US,en;q=0.9',
             'cache-control': 'max-age=0',
-            # 'cookie': 'ppc=; TKY=c0bf3418a73b1fd4bd6ef5166684f897c17919161f1235018d81851fdad41f06; _ctok=5c72268a8bd489e3e5d3424fb3434fd87eace35dbb5cdab06e1e265f67d9fa0e; main_city=Delhi; akcty=Delhi; inweb_city=Delhi; attn_user=logout; profbd=0; bdcheck=1; tab=toprs; bd_inputs=2|4|Estate%20Agents%20For%20Residential%20Rental; view=lst_v; scity=Delhi; sarea=; dealBackCity=Delhi; detailmodule=011PXX11.XX11.150930185126.K1Q8; docidarray=%7B%22011PXX11.XX11.150930185126.K1Q8%22%3A%222020-07-24%22%7D; PHPSESSID=d9b35d5fa2d8694f3864d8d53589a31c; prevcatid=10192844; BDprofile=1; ak_bmsc=604928AB3FE085DB253C8F59815E771017CB3F1CE150000061121C5F70E63B67~plnDsavxg/M7Sg2/VYU3REmc6SVqbe1u1lcc8o8tW96VCP4OCHW6XSotj+UKLgi4qVUNBwtA+30PK9gVt6LZnB7J6RVQRWelvH85otQ0eTMUVZDnn3Hz4QWojBA4QLWu08mbG0f0vaEb/xeGHQOJq0B9UiopxMiSOKx4PS5f6BI8fObEV5g2qmp7FRWzjZml8lxHlLK0xdzqqXXEDMqOo3G0FbipguKsuhWjTDCSH+xFA=; bm_mi=0B35FCCD50D8E56AB54B93FF2ED14813~/K5ZmkanMyeqABEyHRnSV6VR3c/GEP9S83fy2GvuLZP0/0zUjMF3u4qe8stnoS7GHvoN5oCSuT8yjwGFJPfb/3aru8b7htfGP74Cf94VmWPNC119nneiDrg1AF4bcNnya6hameRJGUjK4n6dzqifiCwyMvn5rTgFLBz9BltMlhBSYuGFvSIiE6rt6HEp14X2zxsaZMJVmhy5r1ZxiW/QABYgTYJwXsDTvcpOeiTh8Uv2CGlLa8ckmAlsyIjBqWyYxtkV3JXY8nCEKoIlhol1Aw==; bm_sv=E96C287E40EC63914A75D2D77DC10253~hX56gQLuLI4vftBWp2H/FjD6NlmmWGBBvbpP0ILK9Da4boDG+GeLvUXpDEGEzykxaQUTyEkz1y6fE4RjdDIk00jd/afUNxynJCQwV3RJBeBbh+7E8b5Dzkudp6t7Qfu9IxN5Xb7K+J5GXpfH5vHcm1kevy+QBta2MMSHcpb+StM=; ppc=; main_city=Delhi; attn_user=logout; profbd=0; bdcheck=1; PHPSESSID=3f5954d25448f1d8a93a019a41d84073; akcty=Delhi; inweb_city=Delhi; bm_mi=0B35FCCD50D8E56AB54B93FF2ED14813~/K5ZmkanMyeqABEyHRnSV6VR3c/GEP9S83fy2GvuLZP0/0zUjMF3u4qe8stnoS7GHvoN5oCSuT8yjwGFJPfb/3aru8b7htfGP74Cf94VmWNzXwdimkcD3PmlZFxH0rTlHGlzrPcH0w9yk8YbDJdSlxMBDTZ9ez+TJrTGKRbCn/BG2TBbce28mf+kFFyhsj/gQVz639A6bSwfGgQCHa4IOOn5YIl8xmJNzV5S1YHQf2MEuarWkzvcAik3Fuk3Nz8gW/Xpx2tiJeQAGS+ESPk95Q==; bm_sv=E96C287E40EC63914A75D2D77DC10253~hX56gQLuLI4vftBWp2H/FjD6NlmmWGBBvbpP0ILK9Da4boDG+GeLvUXpDEGEzykxaQUTyEkz1y6fE4RjdDIk00jd/afUNxynJCQwV3RJBeCpgviqHu2LgHTCFmsN3yh+2mvPVCDNNXwtCY0afPk4DCFkqKc8suhiXZf4zv4XHls=',
+            'cookie': 'ppc=; TKY=c0bf3418a73b1fd4bd6ef5166684f897c17919161f1235018d81851fdad41f06; _ctok=5c72268a8bd489e3e5d3424fb3434fd87eace35dbb5cdab06e1e265f67d9fa0e; main_city=Delhi; akcty=Delhi; inweb_city=Delhi; attn_user=logout; profbd=0; bdcheck=1; tab=toprs; bd_inputs=2|4|Estate%20Agents%20For%20Residential%20Rental; view=lst_v; scity=Delhi; sarea=; dealBackCity=Delhi; docidarray=%7B%22011PXX11.XX11.150930185126.K1Q8%22%3A%222020-07-24%22%7D; prevcatid=10192844; BDprofile=1; PHPSESSID=42829c31e453f2a14063ca9de1ee9f66; ak_bmsc=F2505E4BC81B9C5DEA2A1C44775F93DD173945A0BB7C00006F451C5FDF616E73~plWSVS24KDVTJRYsLkfuW24jtEtUsTUVe8gd2y76bksvJcwZResN13n6Hk4mF1aR14Bk/m9waBXf26SEkY7GT87QvY8ngYkuHetQy9+S5HVNhxW3XkNmhd6TsppwtsKp7YbdQ/AhVLyS1etttmZxKwcp4W9gDRWFHNZpZzqb4H+VU0l1KLZabYTSphw1hob/z3v4Ul3zxsiYv1RM9AVvEpYw2v+ievMrIclgndACxS2E4=; bm_mi=E03C31427DF290A373FC34515961DF68~vaRaKxxO09W/7d27AFTFO3IAwVx3bHrcgFlRV4jt6mF4etoWE6/77idPt8lH4MHEw/lDLdQxXnsTpbE3bBJPELeG2gxp+Rd9ECcsIDt+TmS6DrR1ffgzOWkB2edpvqENQ6IqcQaNMN3D3DOEZ/10Al1uanYwGkfJ2jWz1WFQVcwh5dh9xxntPz8tTiLevQylyawdyYPGj96uh8LP5JnL7fOM8t+73L3I9sY+8wG+DYMYFpjQBODVNuGwEk8xLRCj; bm_sv=063F8B5A31AC59E6EC453CCA774449E1~XLHphGaFVN/uqZ6VzM6ty28hsi07eygR1QoaH4TC62b0fi6AI+0LfT0VEfc8eJtZPwvL3kNBPy+QbVHqIXcYk/ckdy4h+LodMd3T4tHqcCkiX2Y/CaXlOv0fB7o3qtz5OP3nMJLSWCzAPZZK0qh9K90v5+WlBfZK1yMlEdtY9rs=',
             'sec-fetch-dest': 'document',
             'sec-fetch-mode': 'navigate',
             'sec-fetch-site': 'none',
@@ -63,19 +62,7 @@ class jsSpider(scrapy.Spider):
             proxyPhone = company.css('span.mobilesv::attr(class)').getall()
             charList = [x.split('-')[1] for x in proxyPhone]
             phone = ''.join(self.charDict.get(x) for x in charList)[6:]
-
-            cookieList = response.headers.getlist('Set-Cookie')
-            print("\n\n\nCookie type: " + str(type(cookieList)))
-            print("\n\n\nCookie Length: " + str(len(cookieList)))
-
-            cookies = ";".join(cookieList)
-            cookies = cookies.split(";")
-            cookies = { cookie.split("=")[0]: cookie.split("=")[1] for cookie in cookies }
-            self.headers_paginated['cookie'] = cookies
-
-            print("\n\n\nCookie deets: -------------------------")
-            print(cookies)
-
+            
             yield {
                 'name': company.css('span.lng_cont_name::text').get(),
                 'rating': float(company.css('span.exrt_count::text').get()),
